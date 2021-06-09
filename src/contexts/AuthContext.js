@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
         })
     }, [user, history]);
 
-    const value  = {user};
+    const value  = {user};     ///notice {user} is assigned to value not user.
 
     return (
         <AuthContext.Provider value={value} >
